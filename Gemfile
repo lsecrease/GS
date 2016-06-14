@@ -19,7 +19,10 @@ gem 'bootstrap-sass', '~> 3.3.4'
 gem 'react-rails', '~> 1.0'
 
 gem "github_api"
-
+gem "pg"
+gem 'pg_search'
+gem 'faker'
+gem 'devise'  
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
