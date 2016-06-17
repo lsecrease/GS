@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
 
-  resources :records
+  #resources :records
   
-   root 'records#index'
-   
+   root 'home#index'
    resources :repos, only: [:index]
    devise_for :users, controllers: {registrations: 'registrations'}
   # The priority is based upon order of creation: first created -> highest priority.

@@ -14,6 +14,10 @@ class RepoController < ApplicationController
     }
     end
     
+    def show
+      @repos = Repo.all
+    end
+    
     
 private
 

@@ -22,7 +22,24 @@ gem "github_api"
 gem "pg"
 gem 'pg_search'
 gem 'faker'
-gem 'devise'  
+gem 'devise' 
+
+
+gem 'bourbon'
+gem 'neat'
+gem 'bitters'
+gem 'nprogress-rails', github: 'caarlos0/nprogress-rails'
+gem 'momentjs-rails', github: 'derekprior/momentjs-rails'
+gem "js-routes", github: 'railsware/js-routes'
+
+gem 'kaminari'
+gem 'gon'
+gem 'will_paginate'
+
+gem 'sprockets-coffee-react'
+gem "active_model_serializers", github: 'rails-api/active_model_serializers'
+
+gem 'annotate', github: 'ctran/annotate_models'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

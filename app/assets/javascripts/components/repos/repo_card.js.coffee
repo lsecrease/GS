@@ -7,12 +7,12 @@
                 #src: '{@props.data.picture}'
             React.DOM.div
                 className: 'caption'
-                React.DOM.h3
-                    '{@props.data.title}'
-                    React.DOM.p
-                        '@props.data.language'
-                        React.DOM.p
-                            '{@props.data.stars} of Stars'
+                React.DOM.h3,
+                    @props.data.title
+                    React.DOM.p,
+                        @props.data.language
+                        React.DOM.p,
+                            @props.data.stars 'of Stars'
                                 
     render: ->
         @repo()

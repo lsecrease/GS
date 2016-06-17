@@ -17,3 +17,13 @@
 //= require react_ujs
 //= require components
 //= require_tree .
+//= require moment
+//= require js-routes
+//= require nprogress
+//= require nprogress-turbolinks
+//= require nprogress-ajax
+
+//= require_tree .
+
+
+

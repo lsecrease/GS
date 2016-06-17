@@ -12,10 +12,13 @@
 
   handleSubmit: (e) ->
     e.preventDefault()
-    $.post '', { record: @state }, (data) =>
-      @props.handleNewRecord data
-      @setState @getInitialState()
-    , 'JSON'
+    
+    searchValue = @refs.search.getDOMNode().value.trim()
+    @props.onFormSubmit(searchValue)
+    # $.post '', { repo: @state }, (data) =>
+    #   @props.handleNewRepo data
+    #   @setState @getInitialState()
+    # , 'JSON'
 
   render: ->
     React.DOM.div
@@ -31,7 +34,7 @@
               className: 'input-group'
               React.DOM.input
                 className: 'form-control'
-                type: 'text'
+                type: 'search'
                 placeholder: "Search for..."
                 name: 'search'
                 value: @state.search
